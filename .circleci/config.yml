@@ -15,8 +15,8 @@ jobs:
 
       - run:
           name: build the jekyll site
-          command: .circleci/config.yml
+          command: - sh .circleci/config.yml
 
-      - run:
+      - run: 
           name: notify build is finished
           command: echo "The build is finished!"
